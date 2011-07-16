@@ -1,0 +1,9 @@
+#footer
+  .left
+    = hook :footer_left do
+      %p
+        = t("powered_by")
+        %a{:href => "http://spreecommerce.com/"} Spree
+  .right
+    = hook :footer_right
+= render 'shared/google_analytics'
